@@ -1,14 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const tasks = require("../controllers/toDosController");
-// const {
-//     getToDos,
-//     addToDo,
-//     getToDosById,
-//     updateToDos,
-//     deleteToDos,
-// } = require("../controllers/toDosController");
-
 
 router.get("/", tasks.getToDos);
 router.get("/:id", tasks.getToDosById);

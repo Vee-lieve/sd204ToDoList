@@ -6,7 +6,6 @@ const database = require("./services/database");
 const ToDosRouter = require("./routes/todos");
 
 app.use(bodyParser.json());
-// app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
 app.use('/static', express.static(path.join(__dirname, 'src')))
 app.use(bodyParser.urlencoded({extended: true}));
